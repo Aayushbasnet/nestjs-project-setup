@@ -7,7 +7,7 @@ import { databaseFactory } from "./database.factory";
     imports: [
         TypeOrmModule.forRootAsync({
             imports: [ConfigModule],
-            useFactory: databaseFactory
+            useFactory: databaseFactory.getConfigOptions()
         })
     ],
     providers: [],
