@@ -9,7 +9,8 @@ import config from "src/config";
             envFilePath: [`${ process.cwd() }/config/env/.env`, `${ process.cwd()}/config/env/.${process.env.NODE_ENV}.env}`],
             isGlobal: true,
             expandVariables: true,
-            load: config
+            load: config,
+            cache: true
         })
     ],
     providers: [],
